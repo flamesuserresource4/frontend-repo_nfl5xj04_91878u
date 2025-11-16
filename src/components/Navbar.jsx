@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Menu, X, Github, Linkedin, Twitter } from 'lucide-react'
+import { Menu, X, Github, Linkedin } from 'lucide-react'
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
@@ -16,7 +16,7 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <a href="#" className="font-semibold tracking-tight text-slate-900 text-lg">
-            <span className="bg-gradient-to-r from-blue-600 via-sky-500 to-indigo-600 bg-clip-text text-transparent">Dev Portfolio</span>
+            <span className="bg-gradient-to-r from-blue-600 via-sky-500 to-indigo-600 bg-clip-text text-transparent">Alok Singh</span>
           </a>
           <nav className="hidden md:flex items-center gap-8">
             {navItems.map(item => (
@@ -26,14 +26,11 @@ export default function Navbar() {
             ))}
             <div className="h-5 w-px bg-slate-300/70" />
             <div className="flex items-center gap-4">
-              <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub" className="text-slate-600 hover:text-slate-900">
+              <a href="https://github.com/Alok-Sci" target="_blank" rel="noreferrer" aria-label="GitHub" className="text-slate-600 hover:text-slate-900">
                 <Github size={20} />
               </a>
-              <a href="https://linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="text-slate-600 hover:text-slate-900">
+              <a href="https://linkedin.com/in/alok--singh" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="text-slate-600 hover:text-slate-900">
                 <Linkedin size={20} />
-              </a>
-              <a href="https://twitter.com/" target="_blank" rel="noreferrer" aria-label="Twitter/X" className="text-slate-600 hover:text-slate-900">
-                <Twitter size={20} />
               </a>
             </div>
           </nav>
@@ -51,14 +48,11 @@ export default function Navbar() {
               </a>
             ))}
             <div className="flex items-center gap-4 pt-2">
-              <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub" className="text-slate-600 hover:text-slate-900">
+              <a href="https://github.com/Alok-Sci" target="_blank" rel="noreferrer" aria-label="GitHub" className="text-slate-600 hover:text-slate-900">
                 <Github size={20} />
               </a>
-              <a href="https://linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="text-slate-600 hover:text-slate-900">
+              <a href="https://linkedin.com/in/alok--singh" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="text-slate-600 hover:text-slate-900">
                 <Linkedin size={20} />
-              </a>
-              <a href="https://twitter.com/" target="_blank" rel="noreferrer" aria-label="Twitter/X" className="text-slate-600 hover:text-slate-900">
-                <Twitter size={20} />
               </a>
             </div>
           </div>

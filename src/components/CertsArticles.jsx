@@ -6,9 +6,9 @@ export default function CertsArticles() {
   ]
 
   const articles = [
-    { title: 'Flutter animations that feel native', platform: 'Medium', link: '#'},
-    { title: 'Clean architecture for React & Flutter', platform: 'Dev.to', link: '#'},
-    { title: 'From web to mobile: lessons learned', platform: 'Hashnode', link: '#'},
+    { title: 'Flutter animations that feel native', platform: 'Medium', link: 'https://medium.com/'},
+    { title: 'Clean architecture for React & Flutter', platform: 'Medium', link: 'https://medium.com/'},
+    { title: 'From web to mobile: lessons learned', platform: 'Medium', link: 'https://medium.com/'},
   ]
 
   return (
@@ -33,7 +33,7 @@ export default function CertsArticles() {
             <h2 className="text-3xl font-bold tracking-tight text-slate-900">Technical Articles</h2>
             <div className="mt-6 space-y-4">
               {articles.map((a) => (
-                <a key={a.title} href={a.link} className="block rounded-xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition">
+                <a key={a.title} href={a.link} target="_blank" rel="noreferrer" className="block rounded-xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition">
                   <p className="font-medium text-slate-900">{a.title}</p>
                   <p className="text-sm text-slate-600">{a.platform}</p>
                 </a>

@@ -1,22 +1,22 @@
 export default function Projects() {
   const projects = [
     {
-      title: 'Fintech Flutter App',
+      title: 'Flutter Finance App',
       tags: ['Flutter', 'Dart', 'Firebase'],
-      desc: 'A modern mobile banking experience with biometrics and beautiful motion.',
-      link: '#'
+      desc: 'Modern mobile banking with biometrics, offline cache, and smooth motion.',
+      link: 'https://github.com/Alok-Sci'
     },
     {
       title: 'React SaaS Dashboard',
       tags: ['React', 'Tailwind', 'Node'],
-      desc: 'Responsive admin dashboard with charts, roles, and dark mode.',
-      link: '#'
+      desc: 'Responsive admin dashboard with charts, RBAC, and dark mode.',
+      link: 'https://github.com/Alok-Sci'
     },
     {
-      title: 'Portfolio v3',
-      tags: ['Next.js', 'Framer Motion'],
-      desc: 'Personal site focused on performance and accessibility.',
-      link: '#'
+      title: 'Personal Portfolio',
+      tags: ['Vite', 'Framer Motion'],
+      desc: 'Performance-focused portfolio with 3D Spline hero and semantic a11y.',
+      link: 'https://github.com/Alok-Sci'
     }
   ]
 
@@ -29,7 +29,7 @@ export default function Projects() {
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((p, idx) => (
-            <a key={idx} href={p.link} className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition hover:-translate-y-0.5">
+            <a key={idx} href={p.link} target="_blank" rel="noreferrer" className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition hover:-translate-y-0.5">
               <div className="aspect-[16/10] rounded-lg bg-gradient-to-br from-slate-100 to-slate-50 mb-4" />
               <div className="flex items-center justify-between">
                 <h3 className="font-semibold text-slate-900">{p.title}</h3>

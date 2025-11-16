@@ -9,8 +9,8 @@ export default function ResumeCTA() {
             <h3 className="text-2xl font-semibold">Grab my resume</h3>
             <p className="mt-2 text-white/80 max-w-xl">One page snapshot of my journey across web and mobile. Contains experience, skills, and notable wins.</p>
             <div className="mt-6 flex items-center gap-3">
-              <a href="#" className="inline-flex items-center justify-center rounded-lg bg-white text-slate-900 px-5 py-2.5 font-medium hover:opacity-90 transition">Download PDF</a>
-              <a href="#" className="inline-flex items-center justify-center rounded-lg border border-white/30 text-white px-5 py-2.5 font-medium hover:bg-white/10 transition">View Online</a>
+              <a href="mailto:corporate.alok@gmail.com" className="inline-flex items-center justify-center rounded-lg bg-white text-slate-900 px-5 py-2.5 font-medium hover:opacity-90 transition">Request PDF</a>
+              <a href="https://linkedin.com/in/alok--singh" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center rounded-lg border border-white/30 text-white px-5 py-2.5 font-medium hover:bg-white/10 transition">View Profile</a>
             </div>
           </div>
         </div>
