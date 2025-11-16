@@ -1,14 +1,16 @@
 export default function CertsArticles() {
   const certs = [
-    { name: 'Google Associate Android Developer', issuer: 'Google', year: '2022' },
-    { name: 'Meta Front-End Developer', issuer: 'Meta', year: '2023' },
-    { name: 'AWS Cloud Practitioner', issuer: 'Amazon', year: '2021' },
+    { name: 'Version Control', issuer: 'Meta', year: '2023' },
+    { name: 'Introduction to Front-End Development', issuer: 'Meta', year: '2023' },
+    { name: 'HTML & CSS in Depth', issuer: 'Meta', year: '2023' },
+    { name: 'Programming with JavaScript', issuer: 'Meta', year: '2023' },
+    { name: 'Introduction to Back-End Development', issuer: 'Meta', year: '2023' },
   ]
 
   const articles = [
-    { title: 'Flutter animations that feel native', platform: 'Medium', link: 'https://medium.com/'},
-    { title: 'Clean architecture for React & Flutter', platform: 'Medium', link: 'https://medium.com/'},
-    { title: 'From web to mobile: lessons learned', platform: 'Medium', link: 'https://medium.com/'},
+    { title: 'Transparent video in Flutter (alpha channel player)', platform: 'Medium', link: 'https://medium.com/@corporate.alok' },
+    { title: 'Clean Architecture in Flutter — migrating from MVVM', platform: 'Medium', link: 'https://medium.com/@corporate.alok' },
+    { title: 'Shipping production Flutter apps: patterns and pitfalls', platform: 'Medium', link: 'https://medium.com/@corporate.alok' },
   ]
 
   return (
@@ -38,6 +40,7 @@ export default function CertsArticles() {
                   <p className="text-sm text-slate-600">{a.platform}</p>
                 </a>
               ))}
+              <a href="https://medium.com/@corporate.alok" target="_blank" rel="noreferrer" className="inline-block mt-2 text-sm text-sky-700 hover:underline">View more on Medium →</a>
             </div>
           </div>
         </div>
