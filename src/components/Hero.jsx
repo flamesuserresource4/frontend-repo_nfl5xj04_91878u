@@ -1,14 +1,19 @@
+import { useEffect, useState } from 'react'
 import Spline from '@splinetool/react-spline'
 
 export default function Hero() {
+  const [mounted, setMounted] = useState(false)
+  const [splineError, setSplineError] = useState(null)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
   return (
     <section className="relative pt-28 pb-24 overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(56,189,248,0.25),transparent_40%),radial-gradient(circle_at_80%_0%,rgba(99,102,241,0.25),transparent_40%),radial-gradient(circle_at_40%_80%,rgba(16,185,129,0.15),transparent_35%)]" />
 
-      <div className="absolute inset-0 -z-0">
-        <Spline scene="https://prod.spline.design/qQUip0dJPqrrPryE/scene.splinecode" style={{ width: '100%', height: '100%' }} />
-      </div>
-
+      {/* 3D Card */}
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <div>
@@ -44,7 +49,17 @@ export default function Hero() {
             <div className="absolute inset-0 rounded-3xl border border-white/30 bg-gradient-to-br from-white/60 to-white/30 backdrop-blur-xl shadow-xl" />
             <div className="absolute inset-0 rounded-3xl overflow-hidden">
               <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(60%_60%_at_30%_20%,rgba(59,130,246,0.18),transparent),radial-gradient(60%_60%_at_70%_10%,rgba(14,165,233,0.18),transparent)]" />
-              <Spline scene="https://prod.spline.design/qQUip0dJPqrrPryE/scene.splinecode" style={{ width: '100%', height: '100%' }} />
+              {mounted && !splineError ? (
+                <Spline
+                  scene="https://prod.spline.design/qQUip0dJPqrrPryE/scene.splinecode"
+                  style={{ width: '100%', height: '100%', pointerEvents: 'none' }}
+                  onError={(e) => setSplineError(e?.message || 'Failed to load 3D scene')}
+                />
+              ) : (
+                <div className="flex h-full w-full items-center justify-center bg-white/40">
+                  <div className="text-sm text-slate-600">{splineError ? '3D preview unavailable' : 'Loading 3D preview...'}</div>
+                </div>
+              )}
             </div>
           </div>
         </div>
